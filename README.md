@@ -15,8 +15,7 @@ A Docker container for running smolagents with OpenAI-compatible models.
 
 ### Running the Container 🚀
 ```bash
-docker run -e PROMPT="Your prompt" -e MODEL_ID="model" -e API_URL="url" -e API_KEY="api_key" gigiodc/smolagents-docker
-```
+docker run -v ./files:/files -e PROMPT="Your prompt" -e MODEL_ID="model" -e API_URL="url" -e API_KEY="api_key" gigiodc/smolagents-docker ```
 
 
 ### Building the Container 🛠️
@@ -24,7 +23,6 @@ docker run -e PROMPT="Your prompt" -e MODEL_ID="model" -e API_URL="url" -e API_K
 git clone https://github.com/gigiodelchiaro/smolagents-docker.git
 cd smolagents-docker
 docker build -t smolagents-docker .
-docker run -e PROMPT="Your prompt" -e MODEL_ID="model" -e API_URL="url" -e API_KEY="api_key" smolagents-docker
 ```
 ## Configuration  (optional) ⚙️
 
