@@ -12,6 +12,5 @@ RUN pip install smolagents openai
 
 # Copy and setup application files
 COPY client.py .
-COPY .env .
 RUN chmod +x client.py
 ENTRYPOINT ["./client.py"]
