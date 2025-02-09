@@ -28,6 +28,6 @@ jobs:
           context: .
           file: Dockerfile
           push: true
-          tags:
+          tags: |
             gigiodc/smolagents-docker:latest
             gigiodc/smolagents-docker:${{ github.run_number }}
